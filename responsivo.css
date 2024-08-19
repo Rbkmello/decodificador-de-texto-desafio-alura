@@ -1,0 +1,149 @@
+/* Media Queries */
+
+@media (max-width: 1280px) {
+
+    body{
+        gap: 2rem;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 1280px;
+    }
+    
+    .container-left{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    body{
+        gap: 3rem;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: 688px;
+        padding: 5px;
+        padding-top: 10px;
+    }
+
+    .header-content {
+        gap: 10px;
+    }
+    
+    .container-left{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .container-left-form__textarea{
+        height: 625px;
+        width: 688px;
+        font-size: 1.5rem;
+        overflow: hidden;
+        padding: 0;
+        line-height: 1.5rem
+    }
+
+    .container-left__botoes {
+        flex-direction: row;
+        max-width: 688px;
+    }
+
+    .container-right {
+        padding: 1rem;
+        width: 100%;
+        max-width:688px;
+        max-height: 400px ;
+        height: auto;
+    }
+    .container-right__no-result__imagem{
+        display: none;
+    }
+    .container-right__result__mensagem {
+        max-height:180px;
+        width: 100%;
+        width: 624px;
+        margin: 0;
+        line-height: 1.5rem
+    }
+
+    .footer__text strong {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    body{
+        gap: 3rem;
+
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 2rem;
+        width: 343px;
+        padding: 16px;
+        padding-top: 10px;
+    }
+    
+    .header-content {
+        gap: 10px;
+    }
+
+    .container-left{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .container-left-form__textarea {
+        height: 275px;
+        max-width: 343px;
+        font-size: 1rem;
+        overflow: hidden;
+        padding: 0 1rem;
+        line-height: 1.5rem
+    }
+
+    .container-left__botoes{
+        flex-direction: column;
+        max-width: 343px;
+    }
+    
+    .container-right {
+        padding: 1rem;
+        width: 100%;
+        max-width:343px;
+        max-height: 350px;
+        gap: 1rem;
+    }
+    .container-right__no-result__imagem{
+        display: none;
+    }
+
+    .container-right__result__mensagem {
+        max-height:180px;
+        width: 100%;
+        max-width: 343px;
+        margin: 0;
+        line-height: 1.5rem
+    }
+
+    .footer__text strong {
+        font-size: 1rem;
+    }
+}
