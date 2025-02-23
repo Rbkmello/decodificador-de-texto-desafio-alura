@@ -1,89 +1,149 @@
-/* Estilos para telas menores que 1280px */
-@media screen and (max-width: 1280px) {
+/* Media Queries */
+
+@media (max-width: 1280px) {
+
+    body{
+        gap: 2rem;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 1280px;
+    }
+    
+    .container-left{
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .header-content {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    body{
+        gap: 3rem;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
-        padding: 1rem;
-    }
-
-    .container-left {
-        margin-left: 0;
-        padding-right: 1rem;
-        max-width: 100%;
-    }
-
-    .container-right {
-        max-width: 90%;
-    }
-}
-
-/* Estilos para telas menores que 760px */
-@media screen and (max-width: 760px) {
-    body {
-        gap: 0.8rem;
-    }
-
-    .header {
         justify-content: center;
+        gap: 2rem;
+        width: 688px;
+        padding: 5px;
+        padding-top: 10px;
     }
 
-    .logoalura {
-        max-width: 120px;
-        width: 100%;
+    .header-content {
+        gap: 10px;
+    }
+    
+    .container-left{
+        margin: 0 auto;
+        padding: 0;
     }
 
-    .container-left {
-        padding: 0 1rem;
-    }
-
-    .container-left-form__textarea {
+    .container-left-form__textarea{
+        height: 625px;
+        width: 688px;
         font-size: 1.5rem;
-        line-height: 36px;
-        height: 400px;
+        overflow: hidden;
+        padding: 0;
+        line-height: 1.5rem
     }
 
     .container-left__botoes {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        max-width: 688px;
     }
 
     .container-right {
-        height: auto;
         padding: 1rem;
+        width: 100%;
+        max-width:688px;
+        max-height: 400px ;
+        height: auto;
+    }
+    .container-right__no-result__imagem{
+        display: none;
+    }
+    .container-right__result__mensagem {
+        max-height:180px;
+        width: 100%;
+        width: 624px;
+        margin: 0;
+        line-height: 1.5rem
     }
 
-    .container-right__result__mensagem {
-        font-size: 1.25rem;
-        line-height: 28px;
-        height: auto;
+    .footer__text strong {
+        font-size: 1rem;
     }
 }
 
-/* Estilos para telas menores que 375px */
-@media screen and (max-width: 375px) {
+@media (max-width: 375px) {
+
+    body{
+        gap: 3rem;
+
+    }
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        gap: 2rem;
+        width: 343px;
+        padding: 16px;
+        padding-top: 10px;
+    }
+    
+    .header-content {
+        gap: 10px;
+    }
+
+    .container-left{
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .container-left-form__textarea {
-        font-size: 1.25rem;
-        line-height: 28px;
-        height: 300px;
+        height: 275px;
+        max-width: 343px;
+        font-size: 1rem;
+        overflow: hidden;
+        padding: 0 1rem;
+        line-height: 1.5rem
     }
 
-    .container-left__botoes__encriptar,
-    .container-left__botoes__desencriptar {
-        font-size: 14px;
-        padding: 1rem;
-        height: auto;
+    .container-left__botoes{
+        flex-direction: column;
+        max-width: 343px;
     }
-
+    
     .container-right {
-        max-width: 100%;
-        border-radius: 1rem;
+        padding: 1rem;
+        width: 100%;
+        max-width:343px;
+        max-height: 350px;
+        gap: 1rem;
+    }
+    .container-right__no-result__imagem{
+        display: none;
     }
 
-    .footer {
-        padding: 0.5rem;
+    .container-right__result__mensagem {
+        max-height:180px;
+        width: 100%;
+        max-width: 343px;
+        margin: 0;
+        line-height: 1.5rem
     }
 
-    .footer__text {
-        font-size: 0.875rem;
+    .footer__text strong {
+        font-size: 1rem;
     }
 }
